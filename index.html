@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/randomnumber-generator-web.git/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Random Number Generator</title>
+    <script type="module" crossorigin src="/randomnumber-generator-web.git/assets/main.2dbe9e4a.js"></script>
+  <link rel="stylesheet" href="/randomnumber-generator-web.git/assets/main.7b6fc854.css">
+</head>
+    <body>
+        <main class="content">
+            <div class="card-detail">
+                <div class="content-card">
+                    <h1>Random Number Generator</h1>
+
+                    <div class="form-range">
+                        <label for="input-start-range" class="label-input"
+                            >Start Number</label
+                        >
+                        <input
+                            type="number"
+                            name="input-start-range"
+                            id="input-start-range"
+                            placeholder="first number for lower limit"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-range">
+                        <label for="input-end-range" class="label-input"
+                            >End Number</label
+                        >
+                        <input
+                            type="number"
+                            name="input-end-range"
+                            id="input-end-range"
+                            placeholder="last number for upper limit"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-range">
+                        <label for="input-maxresult" class="label-input"
+                            >Result Count</label
+                        >
+                        <input
+                            type="number"
+                            name="input-maxresult"
+                            id="input-maxresult"
+                            placeholder="number of generated results"
+                            required
+                        />
+                    </div>
+
+                    <hr />
+
+                    <div class="button-container">
+                        <button class="action-button">Generate Random</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-result">
+                <div class="result-card content-card" id="result-content">
+                    <h1>Random Number Result</h1>
+                    <div class="result-list">
+                        <ul>
+                            <li>
+                                <div class="number-result-container">0</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="toast-container">
+            <div id="toasts">Toast text message...</div>
+        </div>
+        <footer class="footer">
+            <h3>Copyright &copy; 2020 - Random Number Generator</h3>
+        </footer>
+        
+    </body>
+</html>
